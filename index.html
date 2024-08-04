@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lets-Split-it</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet"  href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Moirai+One&family=Zain:wght@200;300;400;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+<h1>Let's Split it</h1>
+
+<div class="row" style="display:flex; justify-content:center;">
+    <div class="tile person" onclick="select(this)">
+        <div class="image-holder"></div>
+        <div class="name">name</div>
+        <div class="balance">balance: $0</div>
+        <div class="taxes">taxes+tip:</div>
+        <div class="total">name</div>
+    </div>
+    <div class="tile" id="addButton" style="display:flex; justify-content:center; align-items:center; text-align:center;">
+        <div class="add-button fa-solid fa-plus" onclick="-addPerson()"></div>
+    </div>
+</div>
+
+<div class="statement">
+    <div class="sumOfBalances">Total before tax: </div>
+    <div class="totalTax">input tax:  $<input id="tax" type="number"></div>
+    <div class="taxSplittingOption form-switch">even-split <input class="form-check-input" type="checkbox" checked style="margin:1px;" onchange="taxSplitChange()">    <span style="margin-left:20vw;">fair-split</span></div>
+
+    <!-- even split or fair split -->
+    <div class="totalTip">input tip:  $<input id="tip" type="number"></div>
+    <div class="tipSplittingOption form-switch"> even-split <input class="form-check-input" type="checkbox" checked style="margin:1px;" onchange="tipSplitChange()">    <span style="margin-left:20vw;">fair-split</span></div>
+    <div id="tax-tip-error">add people before tax and tip information</div>
+    <div class="numOfPeople"></div>
+    <div class="MasterBalance">statement total: </div>
+</div>
+
+<div class="popup">
+    <div class="person-window" >
+        <div class="close" onclick="closeWindow()"></div>
+        <div class="image-holder"></div>
+        <input type="text" class="name" id="input">
+        <span class="item-header"><span style="margin-right:20vw;"> items</span> price</span>
+        <ul class="items">
+            <li class="item">
+                <input type="text" class="object-name"  value="unnamed item" oninput="itemNameChange(this)">
+                $<input type="number" class="object-price" min="0" placeholder="0.00" style="margin-left:2vw;" oninput="itemPriceChange(this)">
+                <button class="delete-button fa-solid fa-trash" onclick="deleteListItem(this)"></button>
+            </li>
+        </ul>
+        <div class="new-list-item-button" onclick="newItem()">add item</div>
+        <div class="balance"></div>
+        <div class="taxes"></div>
+        <div class="total"></div>
+        <div class="remove-person-button fa-solid fa-user-xmark" onclick="removePerson(this)"></div>
+    </div>
+
+</div>
+
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,199 @@
+h1{
+text-align:center;
+font-family: "Moirai One", sans-serif;
+font-weight: 800;
+font-size:15vw;
+font-style: normal;
+}
+div{
+font-family: "Zain",sans-serif;
+
+}
+body{
+margin-left:10px;
+background-color:#e3ecff;
+}
+.statement input{
+background-color:lightgray;
+}
+input{
+border:none;
+text-align:center;
+}
+input:focus{
+outline: none;
+}
+ul{
+padding-left:0;
+list-style:none;
+}
+.tile{
+height:30vh;
+width:40vw;
+margin: 30px auto;
+}
+.add-button{
+padding-top:1vh;
+height:8vh;
+font-size:6vh;
+color:white;
+width:8vh;
+border-radius:25px;
+background-color:#4080ff;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.add-button:hover{
+cursor:pointer;
+}
+.image-holder{
+height:10vh;
+width:10vh;
+border-radius:200px;
+background-color:lightgray;
+margin:auto;
+margin-top:1vh;
+}
+.person{
+display:none;
+cursor:pointer;
+border-radius:2vh;
+background-color:white;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.person .name{
+height:6vh;
+}
+.name {
+font-size:5vh;
+font-weight: 400;
+}
+.person-window .name{
+width:100%;
+}
+.balance{
+font-size:2.5vh;
+font-weight: 300;
+}
+.taxes{
+font-size:2.5vh;
+font-weight: 300;
+}
+.total{
+font-size:3vh;
+}
+.popup{
+display:none;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.3);
+}
+.close{
+position:fixed;
+width:5vh;
+height:5vh;
+background-color:red;
+border-top-left-radius:2vh;
+border-bottom-right-radius:30px;
+}
+.form-switch{
+padding-left:0px;
+}
+.person-window .name{
+font-size:8vh;
+font-weight:500;
+}
+.new-list-item-button{
+border-radius:20vh;
+text-align:center;
+padding: 10px 20px ;
+width:30vw;
+background-color:blue;
+color:white;
+margin-left:10vw;
+font-size:3vh;
+}
+.person-window{
+border-radius:2vh;
+text-align:center;
+overflow:scroll;
+display:none;
+position:fixed;
+left:6vw;
+top:10vh;
+height:80vh;
+width:90vw;
+background-color:white;
+}
+
+.remove-person-button{
+padding:3vw 3vw;
+font-size:3vh;
+border: 2px solid black;
+border-radius:1vh;
+}
+
+.person-window .balance{
+font-size:4vh;
+}
+.person-window .taxes{
+font-size:4vh;
+}
+.person-window .total{
+ font-size:4vh;
+ }
+
+.person-window .image-holder{
+position:relative;
+top:3vh;
+margin-bottom:5vh;
+height:30vh;
+width:30vh;
+}
+.item-header{
+font-size:4vh;
+}
+.items{
+font-size:4vh;
+}
+.items .object-name{
+width:50%;
+font-size:75px;
+}
+.items .object-price{
+width:20vw;
+}
+.delete-button{
+font-size:3vh;
+position:relative;
+width:7vw;
+height:7vw;
+border-style:none;
+background-color:white;
+}
+.fa-solid .fa-trash{
+font-size:100px;
+}
+.item{
+display:none;
+}
+#tax-tip-error{
+color:red;
+display:none;
+}
+.statement{
+text-align:center;
+font-size:8vw;
+}
+#tax{
+width:60vw;
+margin-left:3vw;
+margin-bottom:2vh;
+}
+#tip{
+width:60vw;
+margin-left:3vw;
+margin-bottom:2vh;
+}
